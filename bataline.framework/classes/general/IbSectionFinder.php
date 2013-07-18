@@ -12,6 +12,7 @@ class IbSectionFinder
     protected $mFrom;
     protected $mCriteria;
     protected $mOrder;
+    protected $mSelect;
 
     private static $instance = false;
 
@@ -30,6 +31,13 @@ class IbSectionFinder
         }
 
         return self::$instance;
+    }
+
+    public function select($mSelect = '*')
+    {
+        $this->mSelect = $mSelect;
+
+        return $this;
     }
 
     public function from($mFrom)
