@@ -20,6 +20,7 @@ CModule::AddAutoloadClasses(
         'IbSectionFinder' => 'classes/general/IbSectionFinder.php',
         'UserFinder' => 'classes/general/UserFinder.php',
         'IbUpdater' => 'classes/general/IbUpdater.php',
+        'IbSectionUpdater' => 'classes/general/IbSectionUpdater.php',
     )
 );
 ?>
